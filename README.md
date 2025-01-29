@@ -1,36 +1,68 @@
-# Hi, I'm Gonzalo, _aka "Chalo"_
+# Setup
 
-## Let’s Connect
+1. Ensure you have [Node.js](https://nodejs.org/) installed. Check your installation by running:
 
-I'm always interested in hearing about new opportunities, discussing technology, or swapping stories about product development.
+    ```bash
+    node -v
+    ```
 
-Feel free to connect with me on [LinkedIn](https://linkedin.com/in/chalofa) or drop me a message at `chalo.fa@g m a i l`.
+2. In the project directory, install dependencies:
+
+    ```bash
+    npm install
+    ```
+
+3. Start the development server:
+
+    ```bash
+    npm start
+    ```
+
+4. Open [http://localhost:3000](http://localhost:3000) to view the app in the browser.
+
+5. Customize the template by navigating to the `/src/components` directory. Modify texts, pictures, and other information as needed.
+
+The page will reload if you make edits, and you will see any lint errors in the console.
 
 
-## About Me
+# Deployment
 
-I'm a software engineer and leader with over 15 years of experience building and scaling web applications.  
-I've spent more than 10 of those years leading and guiding engineering teams, most recently at [RoverPass.com](https://www.roverpass.com/), where I helped drive real-time booking systems, inventory management & distribution, and continuous product improvements.
+Host this portfolio is using GitHub Pages. Follow the instructions below for a production deploy.
 
----
+1. **Set Up GitHub Repository**
 
-## My Approach
+    Create a new repository on GitHub for your portfolio app.
 
-I believe in balancing strong technical foundations with a user-focused mindset.  
-I've worked extensively with Ruby on Rails, React.js, GraphQL, PostgreSQL, MySQL and DevOps practices—ensuring robust, secure, and scalable platforms. I prioritize collaborative environments where engineers can learn from each other, adopt clean coding standards, and continuously improve.
+2. **Configure `package.json`**
 
----
+    Edit the following properties in your `package.json` file:
 
-## Tech Toolbox
-- Languages/Frameworks: Ruby on Rails, React.js, Python, PHP, Angular, BackboneJS.
-- Databases: PostgreSQL, MySQL, MS SQL Server.
-- DevOps: Digital Ocean, AWS, Docker, Jenkins, CruiseControl.
-- Other Skills: GraphQL, Stripe, Twilio, Team Management, Agile Methodologies, SCRUM, ITIL.
+    ```json
+    {
+        "homepage": "https://yourusername.github.io/your-repo-name",
+        "scripts": {
+            "predeploy": "npm run build",
+            "deploy": "gh-pages -d build",
+            ...
+        }
+    }
+    ```
 
----
+    Replace `yourusername` with your GitHub username and `your-repo-name` with the name of your GitHub repository.
 
-## Outside of Work
+3. **Deploy to GitHub Pages**
 
-When I'm not coding or leading teams, I enjoy watching NFL games, playing Padel (my new hobbie) and exploring new tech trends, and occasionally dabbling in side projects that let me experiment with emerging frameworks and tools.
+    Run the following command to deploy your app:
 
----
+    ```bash
+    npm run deploy
+    ```
+
+4. **Access Your Deployed App**
+
+    After successfully deploying, you can access your app at `https://yourusername.github.io/your-repo-name`.
+
+
+## What is this?
+
+[Based on](https://yujisatojr.github.io/react-portfolio-template/).
