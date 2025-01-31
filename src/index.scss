@@ -90,6 +90,13 @@ p, a, h1, h2, h3, h4, h5, label, button {
   justify-content: center;
 }
 
+ul.dashed {
+  list-style-type: '- ';
+  > li {
+    margin-left: -1rem;
+  }
+}
+
 .light-mode {
   background-color: #f8f9fa;
 
