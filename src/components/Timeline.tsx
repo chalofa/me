@@ -16,7 +16,44 @@ function Timeline() {
             className="vertical-timeline-element--work"
             contentStyle={{ background: 'white', color: 'rgb(39, 40, 34)' }}
             contentArrowStyle={{ borderRight: '7px solid  white' }}
-            date="2016 - present"
+            date="2024 - present"
+            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
+            icon={<FontAwesomeIcon icon={faBriefcase} />}
+          >
+            <h3 className="vertical-timeline-element-title">Engineering Manager</h3>
+            <h4 className="vertical-timeline-element-subtitle">
+              <a href="https://www.bloomfire.com/" target="_blank" rel="noreferrer">Bloomfire.com</a>
+            </h4>
+            <ul>
+              <li>
+                <b>Built and led the Platform Operations team</b> from the ground up
+                (5 engineers, 2 QAs, 1 PM, 1 designer), now responsible for
+                <b> ~40% of Bloomfire's engineering output</b>.
+              </li>
+              <li>
+                Translate lightweight PRDs from Product into <b>fully scoped, team-ready JIRA epics</b>,
+                leveraging domain experience and AI tooling to move from spec to shipping without ambiguity.
+              </li>
+              <li>
+                Pioneered an <b>AI tool-agnostic per-feature context directory</b> committed to the repo,
+                giving engineers using Claude Code, Cursor, or Codex a shared PRD distillation that
+                <b> eliminates context drift</b> and preserves architecture decisions after ship.
+              </li>
+              <li>
+                Managed <b>Penetration Test remediation</b> end-to-end throughout 2025:
+                patched an <b>SSRF vulnerability</b> in a core HTTP client and rolled out
+                <b> frontend JS error monitoring</b> via HoneyBadger with a canary production release.
+              </li>
+            </ul>
+            <p>
+              <strong>Skills:</strong> <kbd>Team Management</kbd>, <kbd>Ruby on Rails</kbd>, <kbd>React.js</kbd>
+              , <kbd>AWS</kbd>, <kbd>Docker</kbd>, <kbd>AI Tooling</kbd>, <kbd>JIRA</kbd>.
+            </p>
+          </VerticalTimelineElement>
+
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            date="2016 - 2024"
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
